@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CartService } from '../../services/cart/cart.service';
 import { AuthService } from '../../services/auth/auth.service';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, CommonModule], 
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
 
@@ -18,11 +19,11 @@ export class NavBarComponent {
     this.cartService.showCart();
   }
 
-  getCurrentUser(){
+  getCurrentUser() {
     return this.authService.getCurrentUser();
   }
 
-  logout(){
+  logout() {
     this.authService.logout()
       .then(() => console.log("Logout exitoso"))
       .catch(err => console.log(err));

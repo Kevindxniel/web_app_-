@@ -1,36 +1,55 @@
 <div class="container">
-    <h2 class="my-4">Cursos</h2>
-  
-    <div class="row">
+  <h2 class="my-4 text-center">Nuestros Cursos</h2>
+
+  <div class="row">
       <div class="col-md-4">
-        <div class="card" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-          <img src="https://www.mdmarketingdigital.com/blog/wp-content/uploads/2024/01/que-es-el-marketing-digital-1.jpg" class="card-img-top" alt="Curso de Desarrollo Web" style="border-radius: 10px;" />
-          <div class="card-body">
-            <h5 class="card-title">Desarrollo Web</h5>
-            <p class="card-text">Aprende las tecnologías más actuales para crear sitios web dinámicos y funcionales desde cero.</p>
+          <div class="card shadow-sm h-100" style="border-radius: 10px; display: flex; flex-direction: column;">
+              <img src="https://www.mdmarketingdigital.com/blog/wp-content/uploads/2024/01/que-es-el-marketing-digital-1.jpg" class="card-img-top" alt="Curso de Desarrollo Web" style="border-radius: 10px;" />
+              <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Desarrollo Web</h5>
+                  <p class="card-text">Aprende a programar y crear sitios web profesionales con tecnologías modernas.</p>
+                  <div class="mt-auto">
+                      <button (click)="irAProductos()" class="btn btn-primary w-100">Inscríbete Ahora</button>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-  
+
       <div class="col-md-4">
-        <div class="card" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-          <img src="https://universidadeuropea.com/resources/media/images/herramientas_diseno_grafico.width-640.jpg" class="card-img-top" alt="Curso de Marketing Digital" style="border-radius: 10px;" />
-          <div class="card-body">
-            <h5 class="card-title">Marketing Digital</h5>
-            <p class="card-text">Domina las estrategias de marketing para destacar en el mundo digital y aumentar tus ventas.</p>
+          <div class="card shadow-sm h-100" style="border-radius: 10px; display: flex; flex-direction: column;">
+              <img src="https://universidadeuropea.com/resources/media/images/herramientas_diseno_grafico.width-640.jpg" class="card-img-top" alt="Curso de Marketing Digital" style="border-radius: 10px;" />
+              <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Marketing Digital</h5>
+                  <p class="card-text">Domina las estrategias digitales para promocionar productos y servicios en línea.</p>
+                  <div class="mt-auto">
+                      <button (click)="irAProductos()" class="btn btn-primary w-100">Inscríbete Ahora</button>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-  
+
       <div class="col-md-4">
-        <div class="card" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-          <img src="https://www.mdmarketingdigital.com/blog/wp-content/uploads/2024/01/que-es-el-marketing-digital-1.jpg" class="card-img-top" alt="Curso de Diseño Gráfico" style="border-radius: 10px;" />
-          <div class="card-body">
-            <h5 class="card-title">Diseño Gráfico</h5>
-            <p class="card-text">Aprende a crear diseños impactantes con herramientas profesionales y desarrolla tu portafolio.</p>
+          <div class="card shadow-sm h-100" style="border-radius: 10px; display: flex; flex-direction: column;">
+              <img src="https://www.mdmarketingdigital.com/blog/wp-content/uploads/2024/01/que-es-el-marketing-digital-1.jpg" class="card-img-top" alt="Curso de Diseño Gráfico" style="border-radius: 10px;" />
+              <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Diseño Gráfico</h5>
+                  <p class="card-text">Aprende a diseñar imágenes profesionales con herramientas avanzadas.</p>
+                  <div class="mt-auto">
+                      <button (click)="irAProductos()" class="btn btn-primary w-100">Inscríbete Ahora</button>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
-  
+
+  <!-- Información adicional sobre los cursos -->
+  <div class="container-fluid text-center mt-5 p-4 bg-light">
+      <h3 class="mb-3">🎓 ¿Por qué elegir nuestros cursos? 🚀</h3>
+      <p class="lead">
+          Ofrecemos cursos con contenido actualizado y certificados oficiales. Nuestro equipo de expertos te guiará en cada paso para que alcances tus objetivos de aprendizaje. 📚✨
+      </p>
+      <p><strong>💯 Garantía total:</strong> Si no quedas satisfecho, te devolvemos tu dinero.</p>
+      <p><strong>📜 Certificación internacional:</strong> Al finalizar cada curso, recibirás un certificado avalado.</p>
+      <p><strong>📆 Acceso de por vida:</strong> Puedes estudiar a tu propio ritmo sin límites de tiempo.</p>
+  </div>
+</div>

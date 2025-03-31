@@ -9,6 +9,7 @@ import { permissionsGuard } from './guards/permissions/permissions.guard';
 import { ProductFormComponent } from './pages/product-form/product-form.component';
 import { warningsGuard } from './guards/warnings/warnings.guard';
 import { MisCursosComponent } from './pages/mis-cursos/mis-cursos.component';
+import { VideosComponent } from './pages/videos/videos.component';
 
 
 export const routes: Routes = [
@@ -18,14 +19,15 @@ export const routes: Routes = [
         component: ProductsComponent,
         ...canActivate(() => redirectUnauthorizedTo(["/login"]))
     },
-    { 
-        path: 'products/:id', 
+    {
+        path: 'products/:id',
         component: ProductComponent,
         canActivate: [permissionsGuard]
     },
     { path: 'product-form/:id', component: ProductFormComponent, canDeactivate: [warningsGuard] },
     { path: 'login', component: LoginComponent },
     { path: 'mis-cursos', component: MisCursosComponent },
+    {path:'videos',component:VideosComponent},
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', component: NotFoundComponent }
 ];

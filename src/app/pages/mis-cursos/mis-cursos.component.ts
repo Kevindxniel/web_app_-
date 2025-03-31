@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mis-cursos',
@@ -6,14 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mis-cursos.component.css']
 })
 export class MisCursosComponent implements OnInit {
-  // Puedes agregar los datos de los cursos aquí
-  cursos = [
-    { id: 1, nombre: 'Curso 1', descripcion: 'Descripción del curso 1' },
-    { id: 2, nombre: 'Curso 2', descripcion: 'Descripción del curso 2' },
-    { id: 3, nombre: 'Curso 3', descripcion: 'Descripción del curso 3' }
-  ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {}
+
+  irAProductos() {
+    this.router.navigate(['/products']);
+  }
 }
